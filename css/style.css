@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(110, 243, 243);
+}
+
+/*Container que abriga as duas divs*/
+.container{
+    width: 60%;
+    height: 85vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    border-radius: 20px;
+    overflow: hidden;
+}
+/*Estilização da Div de information*/
+.form-information{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+    background-color: rgb(69, 129, 198);
+    color: white;
+    padding: 1rem;
+    flex-direction: column;
+}
+/*Estilização do texto dentro do information*/
+.form-information .information-text{
+    padding-left: 30px;
+    max-width: 80%;
+    font-size: 14px;
+    color: #dddbdb;
+}
+
+.information-text strong{
+    color: white;
+}
+
+.information-header{
+    text-transform: uppercase;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.information-button{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+/*Botao Caso ja tenha uma conta*/
+.information-button .account{
+    width: 155px;
+    height: 42px;
+    border-radius: 5px 0 5px 0;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*Estilização da Div Form*/
+.form-form{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+}
+
+
+.form-header{
+    color: rgb(69, 129, 198);
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+.form-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+/*Estilização da div que recebe label e input*/
+.input-former {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    color: #898888;
+    position: relative;
+}
+
+.input-former label{
+    border-color: #979595;
+    font-weight: bold;
+}
+
+.input-former input {
+    margin-top: 5px;
+    height: 30px;
+    border: 2px solid #979595;
+    padding-left: 10px;
+    color: #6e6c6c;
+    border-radius: 5px 0 5px 0;
+}
+
+.input-former input:focus{
+    outline: none;
+}
+
+.input-former-email {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    color: #6e6c6c;
+    
+}
+
+.input-former-email label{
+    font-weight: bold;
+    color: #898888;
+}
+
+.input-former-email input{
+    margin-top: 5px;
+    width: 380px;
+    height: 30px;
+    border: 2px solid #979595;
+    padding-left: 10px;
+    border-radius: 5px 0 5px 0;
+}
+
+.input-former-email input:focus{
+    outline: none;
+}
+
+
+/*Condição do JS caso tenha erro*/
+.input-former input.error {
+    border-color: rgb(232, 232, 28);
+}
+/*Condição do JS caso seja valido*/
+.input-former input.valid {
+    border-color: rgb(83, 215, 83);
+}
+
+
+/*Condição do JS caso tenha erro adiciona uma mensagem*/
+.error-message {
+    color: rgb(232, 232, 28);
+    font-weight: bold;
+    padding-top: 6px;
+    font-size: 14px;
+    position: absolute;
+    bottom: -20px;
+}
+
+/*Botao Registro*/
+.register{
+    margin-left: 20px;
+    width: 125px;
+    height: 48px;
+    border-radius: 5px 0 5px 0;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(69, 129, 198);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/*Link termo e condições*/
+.highlight{
+    color: rgb(40, 106, 160);
+}
+
+/*estilização dos icones*/
+.input-former i {
+    position: absolute;
+    top: 70%;
+    right: 20px; 
+    transform: translateY(-50%);
+    display: none;
+}
+
+
+/*Classe que recebe input checkbox e sua label*/
+.check {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/*Personalização do Checkbox*/
+.check input[type="checkbox"] {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.65rem;
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    outline: none;
+}
+
+.check input[type="checkbox"]:checked::before {
+    content: "\2713";
+    display: block;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: center;
+    color: blue;
+}
+/*Personalização do texto de check*/
+.check label {
+    font-size: 14px;
+}
+

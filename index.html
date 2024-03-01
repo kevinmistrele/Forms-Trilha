@@ -6,8 +6,67 @@
     <title>Forms</title>
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <div class="container">
+        <div class="form-information">
+            <div class="information-header">
+                <div class="title-information"><h1>Information</h1></div>
+            </div>
+            <div class="information-text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, fuga! Pariatur vero eaque voluptatibus harum, a tempore fugiat, nostrum adipisci, corporis eum neque labore quod eius ex deserunt ratione deleniti? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                
+                <p><strong>Eu ultrices</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto exercitationem provident quibusdam consequatur dignissimos maiores eius doloremque consectetur qui non possimus excepturi accusamu</p>
+            </div>
+            <div class="information-button">
+                <button class="account">Have an Account</button>
+        </div>
+        </div>
+        <div class="form-form">
+            <form>
+                <div class="form-header">
+                    <div class="title"><h1>Register Form</h1></div>
+                </div>
+                <div class="form-input">
+                    <div class="input-former">
+                        <label for="firstname">First Name</label>
+                        <input id="firstname" type="text" required >
+                    </div>
+                    <div class="input-former">
+                        <label for="last name">Last name</label>
+                        <input id="lastname" type="text" required>
+                    </div>
+                    <div class="input-former-email">
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" required>
+                    </div>
+                    <div class="input-former" style="position: relative">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" required>
+                        <i id="passwordIcon" class="fa-solid fa-circle-check" style="color: #1b936f;"></i>
+                    </div>
+                    <div class="input-former" style="position: relative">
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input id="confirmpassword" type="password" required>
+                        <i id="confirmPasswordIcon" class="fa-solid fa-triangle-exclamation" style="color: #FFD43B;"></i>
+                        <div id="confirmPasswordError" class="error-message">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <div class="check">
+                        <input type="checkbox">
+                        <label>I agree to the <a class="highlight" href="#">Terms and Conditions</a></label>
+                    </div>
+                    <div class="form-button">
+                        <div class="register-button">
+                            <button class="register">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
